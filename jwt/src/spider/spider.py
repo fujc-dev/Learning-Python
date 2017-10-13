@@ -140,5 +140,6 @@ htmlText = '''
 '''
 soup = BeautifulSoup(htmlText, 'lxml', from_encoding='utf-8')
 print soup.title
-print soup.meta
+for meta in soup.meta.contents:
+    print meta
 print soup.title.string
