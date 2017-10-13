@@ -49,3 +49,8 @@ if __name__ == "__main__":
     p.close()
     p.join()  # 调用join之前必须调用close
     print "All subprocesses done."
+
+
+# 进程间通信
+# 进程间通信是一个很古老的话题，在其他语言中进程通信一般是管道,MQ,Socket,Http等来实现。
+# 此处的进程间通信主要的子进程间的通信，不的独立进程间的通信
