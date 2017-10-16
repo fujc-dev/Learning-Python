@@ -1,4 +1,4 @@
-import pymysql
+import pymysql  # py3.6语法
 import calendar
 
 # 打开数据库连接
@@ -28,5 +28,3 @@ print(L[:])
 print(L[0:10])  # 取索引0-索引10之间的数字(索引从0开始可以省略为L[:10])
 print(L[-10:])  # 取倒数索引后10个数字
 print(L[10:20:2])  # 取索引10-索引20之间的数，每隔2个取一个
-
-
