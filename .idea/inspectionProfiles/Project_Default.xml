@@ -14,6 +14,7 @@
         <list>
           <option value="BeautifulSoup" />
           <option value="MySQLdb" />
+          <option value="jwt.src.basic.spider.index.jwt" />
         </list>
       </option>
     </inspection_tool>
