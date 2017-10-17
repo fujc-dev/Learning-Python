@@ -11,7 +11,7 @@ import time
 
 
 ##########################
-# 存储,各种存储方式
+# 存储,可实现各种存储方式()
 ##########################
 class Data(object):
     def __init__(self):
@@ -20,7 +20,7 @@ class Data(object):
         self.datas = []
 
     ##########################
-    # 检测是否包含未爬取的URL
+    # 存储到内存中
     ##########################
     def store(self, datas):
         if datas is None:
@@ -28,7 +28,7 @@ class Data(object):
         self.datas.append(datas)
 
     ##########################
-    # 检测是否包含未爬取的URL
+    # 将数据写到本地文件中
     ##########################
     def output_html(self):
         fout = codecs.open(self.filepath, 'a', encoding='utf-8')

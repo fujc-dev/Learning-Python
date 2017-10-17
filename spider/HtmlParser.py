@@ -19,6 +19,14 @@ class HtmlParser(object):
         _urls = set()  # 存储当前字条下所包含的其他新词条
         _datas = {}  # 当前词条爬取的数据
         # 解析内容中的新词条
+        #
+        """
+        /item/(?:%[A-Za-z0-9]{2})+ 根据下列规则构建匹配的正则
+        /item/%E4%B8%87%E7%BB%B4%E7%BD%91,
+        /item/%E5%AE%B6%E5%BA%AD%E7%BD%91%E7%BB%9C,
+        /item/%E4%BF%A1%E6%81%AF%E8%B5%84%E6%BA%90,
+        /item/%E4%B8%87%E7%BB%B4%E7%BD%91
+        """
         links = soup.findAll('a', attrs={"href": re.compile(r'/item/(?:%\w+)+')})
         for link in links:
             _urls.add(link["href"])
