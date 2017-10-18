@@ -6,10 +6,17 @@
 # @Site    : 
 # @File    : URLManager.py
 
+import cPickle
+import hashlib
+
+
 ###########################
-# URL管理器
+# URL管理器,简单从分布式的URI管理器需要做一些优化，
+# 1、依然才去set内存去冲方式
+# 2、由于直接存储URL大量的URL，尤其是URL链接很长时，很容易造成内容溢出，所以
+#    我们将爬取的进行MD5处理。
 ###########################
-class UrlManager(object):
+class URLManager(object):
     ##########################
     # 构造函数
     # 创建两个属性，用于存储待执行的URL以及已执行的URL
@@ -17,8 +24,8 @@ class UrlManager(object):
     """ The most base type """
 
     def __init__(self):
-        self.new_urls = set()  # 未爬取URL集合
-        self.old_urls = set()  # 已爬取URL集合
+        self.new_urls = self.load_progress("new_urls")  # 未爬取URL集合
+        self.old_urls = self.load_progress("old_urls")  # 已爬取URL集合
 
     ##########################
     # 检测是否包含未爬取的URL
@@ -32,7 +39,9 @@ class UrlManager(object):
     ##########################
     def get_new_url(self):
         _url = self.new_urls.pop()
-        self.old_urls.add(_url)  # 当URL从未爬取
+        md5 = hashlib.md5()
+        md5.update(_url)
+        self.old_urls.add(md5.hexdigest()[8:-8])  # 当URL从未爬取
         return _url
 
     ##########################
@@ -43,7 +52,9 @@ class UrlManager(object):
             return
         # URL不在未爬取的URL集合中
         # 并且也不在已爬取的URL集合中
-        if url not in self.new_urls and url not in self.old_urls:
+        md5 = hashlib.md5()
+        url_md5 = md5.update(url)
+        if url not in self.new_urls and url_md5 not in self.old_urls:
             self.new_urls.add("https://baike.baidu.com" + url)
 
     ##########################
@@ -67,3 +78,23 @@ class UrlManager(object):
     ##########################
     def old_url_size(self):
         return len(self.old_urls)
+
+    ##########################
+    # 从文件中加载进度
+    ##########################
+    def load_progress(self, path):
+        print '[+]从文件加载进度：%s' % path
+        try:
+            with open(path, 'rb') as f:
+                tmp = cPickle.load(f)
+                return tmp
+        except:
+            print '[!]无进度文件，创建：%s' % path
+        return set()
+
+    ##########################
+    # 保存进度
+    ##########################
+    def save_progress(self, path, data):
+        with open(path, 'rb') as f:
+            cPickle.dump(data, f)
