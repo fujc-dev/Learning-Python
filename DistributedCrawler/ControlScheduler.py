@@ -5,7 +5,7 @@
 # @Author  : ailsabe@126.com
 # @Site    : 
 # @File    : ControlScheduler.py
-
+import OpenSSL
 ##########################
 # 检测是否包含未爬取的URL
 ##########################

@@ -7,14 +7,14 @@
 # @File    : HtmlParser.py
 
 import re
-import BeautifulSoup
+from bs4 import BeautifulSoup
 
 
 class HtmlParser(object):
     def parser(self, page_url, page_content):
         if page_content is None:
             return
-        soup = BeautifulSoup.BeautifulSoup(page_content, fromEncoding='UTF-8')
+        soup = BeautifulSoup(page_content, 'html.parser')
 
         _urls = set()  # 存储当前字条下所包含的其他新词条
         _datas = {}  # 当前词条爬取的数据
@@ -37,4 +37,6 @@ class HtmlParser(object):
         _content = soup.find('div', attrs={"class": 'lemma-summary'})
         if _content is not None:
             _datas["content"] = _content.getText()
+        else:
+            _datas["content"] = ""
         return _urls, _datas
