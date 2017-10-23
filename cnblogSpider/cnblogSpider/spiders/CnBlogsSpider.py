@@ -11,7 +11,7 @@ import scrapy
 
 class CnBlogsSpider(scrapy.Spider):
     name = 'cnblogs'  # 爬虫的名称
-    allowed_domains = ['cnblogs.com']  # 允许的域名
+    allowed_domains = ['www.cnblogs.com']  # 允许的域名
     start_urls = [
         'https://www.cnblogs.com/qiyeboy/default.html?page=1'
     ]
