@@ -4,7 +4,7 @@
 # @Time    : 2017/10/20 16:54
 # @Author  : ailsabe@126.com
 # @Site    : 
-# @File    : CnBlogsSpider.py
+# @File    : CnBlogSpider.py
 
 import scrapy
 
@@ -37,6 +37,6 @@ class CnBlogsSpider(scrapy.Spider):
         for paper in papers:
             url = paper.xpath('.//*[@class="postTitle"]/a/@href').extract()[0]
             title = paper.xpath('.//*[@class="postTitle"]/a/text()').extract()[0]
-            time = paper.xpath('.//*[@class="daytTitle"]/a/text()').extract()
+            time = paper.xpath('.//*[@class="dayTitle"]/a/text()').extract()[0]
             content = paper.xpath('.//*[@class="c_b_p_desc"]/text()').extract()[0]
             print url, title, time, content
