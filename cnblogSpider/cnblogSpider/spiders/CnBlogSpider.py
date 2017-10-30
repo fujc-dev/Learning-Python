@@ -39,4 +39,6 @@ class CnBlogsSpider(scrapy.Spider):
             title = paper.xpath('.//*[@class="postTitle"]/a/text()').extract()[0]
             time = paper.xpath('.//*[@class="dayTitle"]/a/text()').extract()[0]
             content = paper.xpath('.//*[@class="c_b_p_desc"]/text()').extract()[0]
+            item = CnBlogSpiderItem(url=url, title=title, time=time, content=content)
             print url, title, time, content
+            yield item

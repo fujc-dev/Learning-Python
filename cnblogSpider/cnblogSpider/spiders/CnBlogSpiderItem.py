@@ -18,6 +18,6 @@ class CnBlogSpiderItemItem(scrapy.Item):
     pass
 
 
-if __name__ == '__main__':
-    item = CnBlogSpiderItemItem(title='Python爬虫', content="爬虫开发")
-    print item["title"]
+# if __name__ == '__main__':
+#     item = CnBlogSpiderItemItem(title='Python爬虫', content="爬虫开发")
+#     print item["title"]

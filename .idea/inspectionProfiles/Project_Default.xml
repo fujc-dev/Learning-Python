@@ -15,6 +15,8 @@
           <option value="BeautifulSoup" />
           <option value="MySQLdb" />
           <option value="jwt.src.basic.spider.index.jwt" />
+          <option value="cnblogSpider.cnblogSpider.spiders.CnBlogSpider.CnBlogSpiderItem" />
+          <option value="cnblogSpider.cnblogSpider.spiders.CnBlogSpider.cnblogSpider" />
         </list>
       </option>
     </inspection_tool>
