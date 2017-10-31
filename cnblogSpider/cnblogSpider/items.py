@@ -8,7 +8,13 @@
 import scrapy
 
 
-class CnblogspiderItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+######################################
+# 定义Item
+# 爬取的主要目标就是从非结构的数据源提取出结构性的数据
+######################################
+class CnblogSpiderItem(scrapy.Item):
+    # 定义项的字段
+    url = scrapy.Field()
+    title = scrapy.Field()
+    time = scrapy.Field()
+    content = scrapy.Field()
