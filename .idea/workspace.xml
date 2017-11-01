@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd56d530-0eb1-4837-882c-688b25c84d7f" name="Default" comment="Learning-Python">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zhihuCrawl/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zhihuCrawl/scrapy.cfg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zhihuCrawl/zhihuCrawl/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zhihuCrawl/zhihuCrawl/items.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zhihuCrawl/zhihuCrawl/middlewares.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zhihuCrawl/zhihuCrawl/pipelines.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zhihuCrawl/zhihuCrawl/settings.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zhihuCrawl/zhihuCrawl/spiders/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zhihuCrawl/zhihuCrawl/spiders/zhihu_com.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zhihuCrawl/zhihuCrawl/spiders/zhihu_com.py" afterPath="$PROJECT_DIR$/zhihuCrawl/zhihuCrawl/spiders/zhihu_com.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,14 +28,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="items.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zhihuCrawl/zhihuCrawl/items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="378">
+              <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding>
                 <element signature="e#205#708#0" expanded="false" />
                 <element signature="e#748#892#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zhihu_com.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zhihuCrawl/zhihuCrawl/spiders/zhihu_com.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding>
+                <element signature="e#24#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -60,6 +64,7 @@
         <option value="$PROJECT_DIR$/Learning-Python/cnblogSpider/cnblogSpider/items.py" />
         <option value="$PROJECT_DIR$/zhihuCrawl/README.md" />
         <option value="$PROJECT_DIR$/zhihuCrawl/zhihuCrawl/items.py" />
+        <option value="$PROJECT_DIR$/zhihuCrawl/zhihuCrawl/spiders/zhihu_com.py" />
       </list>
     </option>
   </component>
@@ -115,6 +120,13 @@
               <item name="Learning-Python" type="462c0819:PsiDirectoryNode" />
               <item name="zhihuCrawl" type="462c0819:PsiDirectoryNode" />
               <item name="zhihuCrawl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Learning-Python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Learning-Python" type="462c0819:PsiDirectoryNode" />
+              <item name="zhihuCrawl" type="462c0819:PsiDirectoryNode" />
+              <item name="zhihuCrawl" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -178,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509522327542</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Learning-Python">
+      <created>1509526485423</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1509526485423</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -332,16 +351,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zhihuCrawl/zhihuCrawl/spiders/zhihu_com.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zhihuCrawl/zhihuCrawl/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -376,11 +385,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zhihuCrawl/zhihuCrawl/items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="378">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding>
             <element signature="e#205#708#0" expanded="false" />
             <element signature="e#748#892#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhihuCrawl/zhihuCrawl/spiders/zhihu_com.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
