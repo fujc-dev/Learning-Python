@@ -2,24 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd56d530-0eb1-4837-882c-688b25c84d7f" name="Default" comment="Learning-Python">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jwt/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jwt/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jwt/.idea/jwt.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jwt/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jwt/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jwt/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jwt/ReadMe.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jwt/src/Simple/Games.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jwt/src/Simple/index.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jwt/src/Simple/simple.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jwt/src/Simple/函数.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning-Python" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zhihuCrawl/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zhihuCrawl/scrapy.cfg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zhihuCrawl/zhihuCrawl/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zhihuCrawl/zhihuCrawl/items.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zhihuCrawl/zhihuCrawl/middlewares.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zhihuCrawl/zhihuCrawl/pipelines.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zhihuCrawl/zhihuCrawl/settings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zhihuCrawl/zhihuCrawl/spiders/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zhihuCrawl/zhihuCrawl/spiders/zhihu_com.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cnblogSpider/.idea/workspace.xml" afterPath="$PROJECT_DIR$/cnblogSpider/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cnblogSpider/cnblogSpider/items.py" afterPath="$PROJECT_DIR$/cnblogSpider/cnblogSpider/items.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cnblogSpider/cnblogSpider/pipelines.py" afterPath="$PROJECT_DIR$/cnblogSpider/cnblogSpider/pipelines.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cnblogSpider/cnblogSpider/spiders/CnBlogSpider.py" afterPath="$PROJECT_DIR$/cnblogSpider/cnblogSpider/spiders/CnBlogSpider.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,64 +36,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
+      <file leaf-file-name="items.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zhihuCrawl/zhihuCrawl/items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cnblogSpider/cnblogSpider/items.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1053">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="middlewares.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cnblogSpider/cnblogSpider/middlewares.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-243">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cnblogSpider/cnblogSpider/pipelines.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CnBlogSpider.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cnblogSpider/cnblogSpider/spiders/CnBlogSpider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
-                <element signature="e#173#186#0" expanded="true" />
+                <element signature="e#205#708#0" expanded="false" />
+                <element signature="e#748#892#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jwt/src/Simple/index.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -115,6 +58,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Learning-Python/cnblogSpider/cnblogSpider/items.py" />
+        <option value="$PROJECT_DIR$/zhihuCrawl/README.md" />
+        <option value="$PROJECT_DIR$/zhihuCrawl/zhihuCrawl/items.py" />
       </list>
     </option>
   </component>
@@ -163,20 +108,13 @@
             <path>
               <item name="Learning-Python" type="b2602c69:ProjectViewProjectNode" />
               <item name="Learning-Python" type="462c0819:PsiDirectoryNode" />
-              <item name="cnblogSpider" type="462c0819:PsiDirectoryNode" />
+              <item name="zhihuCrawl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Learning-Python" type="b2602c69:ProjectViewProjectNode" />
               <item name="Learning-Python" type="462c0819:PsiDirectoryNode" />
-              <item name="cnblogSpider" type="462c0819:PsiDirectoryNode" />
-              <item name="cnblogSpider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Learning-Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Learning-Python" type="462c0819:PsiDirectoryNode" />
-              <item name="cnblogSpider" type="462c0819:PsiDirectoryNode" />
-              <item name="cnblogSpider" type="462c0819:PsiDirectoryNode" />
-              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+              <item name="zhihuCrawl" type="462c0819:PsiDirectoryNode" />
+              <item name="zhihuCrawl" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -190,6 +128,11 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Github\Learning-Python\zhihuCrawl" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -228,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509522011801</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Learning-Python">
+      <created>1509522327542</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1509522327542</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -243,7 +193,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -308,14 +258,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Learning-Python/cnblogSpider/cnblogSpider/spiders/CnBlogSpider.py" />
     <entry file="file://$PROJECT_DIR$/Learning-Python/cnblogSpider/cnblogSpider/items.py" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cnblogSpider/cnblogSpider/items.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1053">
@@ -332,18 +274,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cnblogSpider/cnblogSpider/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cnblogSpider/cnblogSpider/spiders/CnBlogSpider.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="e#173#186#0" expanded="true" />
           </folding>
@@ -355,6 +289,99 @@
         <state relative-caret-position="54">
           <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cnblogSpider/cnblogSpider/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cnblogSpider/cnblogSpider/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-324">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cnblogSpider/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhihuCrawl/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhihuCrawl/zhihuCrawl/spiders/zhihu_com.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhihuCrawl/zhihuCrawl/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhihuCrawl/zhihuCrawl/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1117">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhihuCrawl/zhihuCrawl/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="79" column="29" lean-forward="true" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhihuCrawl/scrapy.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhihuCrawl/zhihuCrawl/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#205#708#0" expanded="false" />
+            <element signature="e#748#892#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
