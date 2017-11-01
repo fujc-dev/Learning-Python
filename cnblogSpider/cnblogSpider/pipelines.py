@@ -24,14 +24,7 @@ class CnblogspiderPipeline(object):
     def __init__(self):
         self.file = open('papers.json', 'wb')
         # 配置client，默认地址localhost，端口27017
-        client = pymongo.MongoClient('localhost', 27017)
-        # 创建一个数据库，名称store_cnblogs
-        db_name = client['store_cnblogs']
-        # 创建一个表
-        self.cnblogs_list = db_name['cnblogs']
-        self.cnblogs_list.insert({"name": "zhangsan", "age": 18})
-        users = [{"name": "zhangsan", "age": 18}, {"name": "lisi", "age": 20}]
-        self.cnblogs_list.insert(users)
+        self.client = pymongo.MongoClient('localhost', 27017)
 
     def process_item(self, item, spider):
         '''
@@ -41,11 +34,15 @@ class CnblogspiderPipeline(object):
         '''
 
         if item['title']:
+
+            # 创建一个数据库，名称store_cnblogs
+            db_name = self.client['store_cnblogs']
+            # 创建一个表
+            cnblogs_list = db_name['cnblogs']
+            cnblogs_list.insert(dict(item))
             line = json.dumps(dict(item)) + "\n"
             self.file.write(line)
             return item
         else:
             raise DropItem('这个Item被抛弃，后续不做处理')
-        return item
-
-        # Item Pipeline代码编写完毕后，需要激活才有效(setting)
+            # Item Pipeline代码编写完毕后，需要激活才有效(setting)

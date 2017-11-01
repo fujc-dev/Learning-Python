@@ -9,6 +9,7 @@
 import scrapy
 import re
 from scrapy import Selector
+from scrapy.crawler import CrawlerProcess
 
 from cnblogSpider.items import CnblogSpiderItem
 
@@ -20,7 +21,7 @@ from cnblogSpider.items import CnblogSpiderItem
 '''
 
 
-class CnBlogsSpider(scrapy.Spider):
+class CnBlogSpider(scrapy.Spider):
     #
     name = 'cnblogs'  # 爬虫的名称
     #
@@ -29,7 +30,6 @@ class CnBlogsSpider(scrapy.Spider):
     start_urls = [
         'https://www.cnblogs.com/qiyeboy/default.html?page=1'
     ]
-
 
     ###############################
     # 重写parse回调函数
@@ -63,5 +63,10 @@ class CnBlogsSpider(scrapy.Spider):
                 print next_page[0]
                 yield scrapy.Request(url=next_page[0], callback=self.parse)
 
+
 # if __name__ == '__main__':
-#     pass
+#     process = CrawlerProcess({
+#         "USER_AGENT": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NE 5.1)"
+#     })
+#     process.crawl(CnBlogSpider)
+#     process.start()
