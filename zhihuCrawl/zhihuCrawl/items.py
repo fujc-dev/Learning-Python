@@ -42,4 +42,17 @@ class RelationItem(scrapy.Item):
     # 和我有关系人的id列表
     relations_id = scrapy.Field()
 
-    pass
+
+class TencentItem(scrapy.Item):
+    # 职位
+    name = scrapy.Field()
+    # 详情链接
+    positionlink = scrapy.Field()
+    # 职位类别
+    positiontype = scrapy.Field()
+    # 人数
+    peoplenum = scrapy.Field()
+    # 工作地点
+    worklocation = scrapy.Field()
+    # 发布时间
+    publish = scrapy.Field()

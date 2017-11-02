@@ -1,38 +1,52 @@
 # -*- coding: utf-8 -*-
 import scrapy
+from parsel import Selector
+from scrapy import FormRequest
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
+from scrapy.http import Request
 
 
 class ZhihuComSpider(CrawlSpider):
     name = 'zhihu.com'
     allowed_domains = ['zhihu.com']
-    start_urls = ['http://zhihu.com/']
-    # 模拟浏览器
-    request_header = {
-        "Accept": "*/*",
-        "Accept-Encoding": "gzip, deflate, br",
-        "Accept-Language": "zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3",
-        "Connection": "keep-alive",
-        "Content-Length": 137,
-        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-        "Host": "www.zhihu.com",
-        "Referer": "https://www.zhihu.com/",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0",
-        "X-Requested-With": "X-Requested-With",
-        "X-Xsrftoken": "d098c6f7-c359-41e3-99c6-16735f9dc20e"
-    }
+    start_urls = ['https://www.zhihu.com/people/tombkeeper']
 
-    rules = (
-        Rule(LinkExtractor(allow=r'Items/'), callback='parse_item', follow=True),
-    )
+    # rules = (
+    #     Rule(LinkExtractor(allow=r'people/'), callback='parse_item', follow=True),
+    # )
 
+
+    # 替换原来的start_requests，callback为
     def start_requests(self):
-        '''
+        return [Request("http://www.zhihu.com/#signin", meta={'cookiejar': 1}, callback=self.post_login)]
 
-        :return:
-        '''
+    def post_login(self, response):
+        print 'Preparing login'
+        # 下面这句话用于抓取请求网页后返回网页中的_xsrf字段的文字, 用于成功提交表单
+        xsrf = response.xpath('.//input[@name="_xsrf"]/@value').extract()
+        # 为什么这种Selector的方式会报异常，暂时没有研究
+        # Selector(response.text).xpath('.//input[@name="_xsrf"]/@value').extract()
+        print xsrf[0]
         pass
+        # FormRequeset.from_response是Scrapy提供的一个函数, 用于post表单
+        # 登陆成功后, 会调用after_login回调函数
+        # return [FormRequest.from_response(response,  # "http://www.zhihu.com/login",
+        #                                   meta={'cookiejar': response.meta['cookiejar']},
+        #                                   headers=self.headers,
+        #                                   formdata={
+        #                                       '_xsrf': xsrf,
+        #                                       'email': '1527927373@qq.com',
+        #                                       'password': '321324jia'
+        #                                   },
+        #                                   callback=self.after_login,
+        #                                   dont_filter=True
+        #                                   )]
+
+    # make_requests_from_url会调用parse，就可以与CrawlSpider的parse进行衔接了
+    def after_login(self, response):
+        for url in self.start_urls:
+            yield self.make_requests_from_url(url)
 
     def parse_item(self, response):
         i = {}
